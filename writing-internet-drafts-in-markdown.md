@@ -289,6 +289,18 @@ author:
     - Supports files in both kramdown-rfc and mmark formats
 
 ---
+# My own examples
+
+- Created using mmark via Docker image (primarily because at the time I was learning more about Docker and this gave me a reason to experiment more)
+- **draft-york-manycouches-completely-virtual-meetings**
+    - https://github.com/danyork/draft-york-manycouches-completely-virtual-meetings
+    - https://tools.ietf.org/html/draft-manycouches-completely-virtual-meetings-04
+
+- **draft-york-dnsop-deploying-dnssec-crypto-algs**
+    - https://github.com/danyork/draft-deploying-dnssec-crypto-algs
+    - https://tools.ietf.org/html/draft-york-dnsop-deploying-dnssec-crypto-algs
+
+---
 # Resources
 
 - RFC 7763 - https://tools.ietf.org/html/rfc7763
@@ -305,6 +317,14 @@ author:
     - https://github.com/riboseinc/rfc-asciirfc-minimal
     - Based on https://asciidoctor.org/
     - Provides a more formal, structured text markup
+
+---
+# Getting more involved
+
+### If you want to do more with writing Internet Drafts in Markdown, 
+### you can join the **rfc-markdown** list:
+
+### https://www.ietf.org/mailman/listinfo/Rfc-markdown
 
 ---
 # Thank You
