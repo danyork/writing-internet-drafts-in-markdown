@@ -203,6 +203,8 @@ At a basic level, the various tools do this:
 3. Find the kramdown box:
 ![](images/online-kramdown-converter.jpg)
 4. Choose file and submit for processing
+5. The XML file will be downloaded to your computer.
+    - _NOTE:_ The XML file name is currently same name as input file, including `.md` extension.
 
 ---
 # Kramdown-rfc Notes
