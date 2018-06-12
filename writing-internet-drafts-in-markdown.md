@@ -293,7 +293,7 @@ author:
 ---
 # My own examples
 
-- Created using mmark via Docker image (primarily because at the time I was learning more about Docker and this gave me a reason to experiment more)
+- Created using mmark via Docker image (primarily because at the time I was learning more about Docker and this gave me a reason to experiment)
 - **draft-york-manycouches-completely-virtual-meetings**
     - https://github.com/danyork/draft-york-manycouches-completely-virtual-meetings
     - https://tools.ietf.org/html/draft-manycouches-completely-virtual-meetings-04
@@ -319,6 +319,16 @@ author:
     - https://github.com/riboseinc/rfc-asciirfc-minimal
     - Based on https://asciidoctor.org/
     - Provides a more formal, structured text markup
+
+---
+# Final Thoughts
+
+- Markdown provides an easy way to rapidly create Internet Drafts without needing to know XML
+- Markdown tools can be used to generate XML if you want to then work more in XML
+    - Tools can only do Markdown -> XML
+    - Some people who work in XML use Markdown as a way to bootstrap the creation of their XML files
+- Markdown can be extended by embedding XML snippets (for example, if you want to use some feature in XML that is not yet in Markdown)
+- The ecosystem of tools, apps, services, and sites that support Markdown continues to expand
 
 ---
 # Getting more involved
