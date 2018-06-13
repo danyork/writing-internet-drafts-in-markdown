@@ -42,7 +42,7 @@ is easier for _most_ people to understand than this...
 # What is Markdown?
 
 - Lightweight text formatting language
-- Developed by John Gruber in 2004 with help from Aaron Schwartz
+- Developed by John Gruber in 2004 with help from Aaron Swartz
 - https://daringfireball.net/projects/markdown/
 - Inspired by customs and conventions emerging out of text-based email
 
