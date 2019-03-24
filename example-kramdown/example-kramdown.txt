@@ -4,8 +4,8 @@
 
 TODO Working Group                                               T. Todo
 Internet-Draft                                         TODO Organization
-Intended status: Informational                             June 11, 2018
-Expires: December 13, 2018
+Intended status: Informational                            March 24, 2019
+Expires: September 25, 2019
 
 
                            TODO - Your title
@@ -13,7 +13,8 @@ Expires: December 13, 2018
 
 Abstract
 
-   TODO Abstract
+   This is an example of using markdown in the creation of an Internet
+   Draft.  The specific flavor of markdown being used is kramdown-rfc.
 
 Status of This Memo
 
@@ -30,11 +31,11 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on December 13, 2018.
+   This Internet-Draft will expire on September 25, 2019.
 
 Copyright Notice
 
-   Copyright (c) 2018 IETF Trust and the persons identified as the
+   Copyright (c) 2019 IETF Trust and the persons identified as the
    document authors.  All rights reserved.
 
    This document is subject to BCP 78 and the IETF Trust's Legal
@@ -52,25 +53,35 @@ Copyright Notice
 
 
 
-
-Todo                    Expires December 13, 2018               [Page 1]
+Todo                   Expires September 25, 2019               [Page 1]
 
-Internet-Draft             TODO - Abbreviation                 June 2018
+Internet-Draft             TODO - Abbreviation                March 2019
 
 
 Table of Contents
 
    1.  Introduction  . . . . . . . . . . . . . . . . . . . . . . . .   2
    2.  Conventions and Definitions . . . . . . . . . . . . . . . . .   2
-   3.  Security Considerations . . . . . . . . . . . . . . . . . . .   2
-   4.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .   2
-   5.  Normative References  . . . . . . . . . . . . . . . . . . . .   2
-   Acknowledgments . . . . . . . . . . . . . . . . . . . . . . . . .   2
-   Author's Address  . . . . . . . . . . . . . . . . . . . . . . . .   3
+   3.  Background  . . . . . . . . . . . . . . . . . . . . . . . . .   2
+   4.  Use Cases . . . . . . . . . . . . . . . . . . . . . . . . . .   2
+     4.1.  First use case  . . . . . . . . . . . . . . . . . . . . .   2
+     4.2.  Second use case . . . . . . . . . . . . . . . . . . . . .   3
+   5.  Security Considerations . . . . . . . . . . . . . . . . . . .   3
+   6.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .   3
+   7.  References  . . . . . . . . . . . . . . . . . . . . . . . . .   3
+     7.1.  Normative References  . . . . . . . . . . . . . . . . . .   3
+     7.2.  Informative References  . . . . . . . . . . . . . . . . .   3
+   Acknowledgments . . . . . . . . . . . . . . . . . . . . . . . . .   4
+   Author's Address  . . . . . . . . . . . . . . . . . . . . . . . .   4
 
 1.  Introduction
 
    TODO Introduction
+
+   More infomation can be found in [I-D.nottingham-for-the-users].  (An
+   exmple of an informative reference to a draft in the middle of text.
+   Note that referencing an Internet draft involves replacing "draft-"
+   in the name with "I-D.")
 
 2.  Conventions and Definitions
 
@@ -80,39 +91,88 @@ Table of Contents
    14 [RFC2119] [RFC8174] when, and only when, they appear in all
    capitals, as shown here.
 
-3.  Security Considerations
+3.  Background
+
+   This is some background text.
+
+4.  Use Cases
+
+   This section will include some use cases for our new protocol.  The
+   use cases conform to the guidelines found in [RFC7258].
+   (Demonstrating a normative reference inline.)
+
+4.1.  First use case
+
+   Some text about the first use case. (and an example of using a second
+   level heading.)
+
+
+
+
+Todo                   Expires September 25, 2019               [Page 2]
+
+Internet-Draft             TODO - Abbreviation                March 2019
+
+
+4.2.  Second use case
+
+   This example includes a list:
+
+   o  first item
+
+   o  second item
+
+   o  third item
+
+   And text below the list.
+
+5.  Security Considerations
 
    TODO Security
 
-4.  IANA Considerations
+6.  IANA Considerations
 
    This document has no IANA actions.
 
-5.  Normative References
+7.  References
+
+7.1.  Normative References
 
    [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
               Requirement Levels", BCP 14, RFC 2119,
               DOI 10.17487/RFC2119, March 1997,
               <https://www.rfc-editor.org/info/rfc2119>.
 
+   [RFC7258]  Farrell, S. and H. Tschofenig, "Pervasive Monitoring Is an
+              Attack", BCP 188, RFC 7258, DOI 10.17487/RFC7258, May
+              2014, <https://www.rfc-editor.org/info/rfc7258>.
+
    [RFC8174]  Leiba, B., "Ambiguity of Uppercase vs Lowercase in RFC
               2119 Key Words", BCP 14, RFC 8174, DOI 10.17487/RFC8174,
               May 2017, <https://www.rfc-editor.org/info/rfc8174>.
 
+7.2.  Informative References
+
+   [I-D.nottingham-for-the-users]
+              Nottingham, M., "The Internet is for End Users", draft-
+              nottingham-for-the-users-07 (work in progress), March
+              2019.
+
+
+
+
+
+
+
+
+Todo                   Expires September 25, 2019               [Page 3]
+
+Internet-Draft             TODO - Abbreviation                March 2019
+
+
 Acknowledgments
 
    TODO acknowledge.
-
-
-
-
-
-
-
-Todo                    Expires December 13, 2018               [Page 2]
-
-Internet-Draft             TODO - Abbreviation                 June 2018
-
 
 Author's Address
 
@@ -161,8 +221,4 @@ Author's Address
 
 
 
-
-
-
-
-Todo                    Expires December 13, 2018               [Page 3]
+Todo                   Expires September 25, 2019               [Page 4]
