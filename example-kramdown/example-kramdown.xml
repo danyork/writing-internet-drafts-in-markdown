@@ -66,15 +66,24 @@ when, and only when, they appear in all capitals, as shown here.</t>
 <t>This is some background text.</t>
 
 </section>
-<section anchor="use-cases" title="Use Cases">
+<section anchor="usecases" title="Use Cases">
 
 <t>This section will include some use cases for our new protocol.  The use cases conform
 to the guidelines found in <xref target="RFC7258"/>. (Demonstrating a normative 
 reference inline.)</t>
 
+<t>Note that the section heading also includes an anchor name that can be referenced in a 
+cross reference later in the document, as is done in <xref target="security-considerations"/> 
+of this document.  (Demonstrating using a reference to a heading without writing an
+actual anchor, but rather using the heading name in lowercase and with dashes.)</t>
+
 <section anchor="first-use-case" title="First use case">
 
 <t>Some text about the first use case. (and an example of using a second level heading.)</t>
+
+<t>HTTP version 2 is defined in <xref target="HTTP2"/>. (Demonstrating renaming a reference so
+that it is “HTTP2” instead of “RFC7540”. You need to do this the first time you use a
+reference. From here on in the document you can just use “HTTP2” in a reference.)</t>
 
 </section>
 <section anchor="second-use-case" title="Second use case">
@@ -84,7 +93,7 @@ reference inline.)</t>
 <t><list style="symbols">
   <t>first item</t>
   <t>second item</t>
-  <t>third item</t>
+  <t>third item, with a reference to <xref target="HTTP2"/>.</t>
 </list></t>
 
 <t>And text below the list.</t>
@@ -93,7 +102,8 @@ reference inline.)</t>
 </section>
 <section anchor="security-considerations" title="Security Considerations">
 
-<t>TODO Security</t>
+<t>As outlined earlier in <xref target="usecases"/>, there could be security issues in various use
+cases.</t>
 
 </section>
 <section anchor="iana-considerations" title="IANA Considerations">
@@ -186,13 +196,29 @@ reference inline.)</t>
 
 
 
+<reference  anchor="HTTP2" target='https://www.rfc-editor.org/info/rfc7540'>
+<front>
+<title>Hypertext Transfer Protocol Version 2 (HTTP/2)</title>
+<author initials='M.' surname='Belshe' fullname='M. Belshe'><organization /></author>
+<author initials='R.' surname='Peon' fullname='R. Peon'><organization /></author>
+<author initials='M.' surname='Thomson' fullname='M. Thomson' role='editor'><organization /></author>
+<date year='2015' month='May' />
+<abstract><t>This specification describes an optimized expression of the semantics of the Hypertext Transfer Protocol (HTTP), referred to as HTTP version 2 (HTTP/2).  HTTP/2 enables a more efficient use of network resources and a reduced perception of latency by introducing header field compression and allowing multiple concurrent exchanges on the same connection.  It also introduces unsolicited push of representations from servers to clients.</t><t>This specification is an alternative to, but does not obsolete, the HTTP/1.1 message syntax.  HTTP's existing semantics remain unchanged.</t></abstract>
+</front>
+<seriesInfo name='RFC' value='7540'/>
+<seriesInfo name='DOI' value='10.17487/RFC7540'/>
+</reference>
+
+
+
 
     </references>
 
 
 <section numbered="false" anchor="acknowledgments" title="Acknowledgments">
 
-<t>TODO acknowledge.</t>
+<t>Thanks to everyone who helped create the tools that let us use Markdown to create 
+Internet Drafts.</t>
 
 </section>
 
@@ -200,28 +226,35 @@ reference inline.)</t>
   </back>
 
 <!-- ##markdown-source:
-H4sIAI5el1wAA21UbW8bNwz+rl/BuV82oDKSoENbA8Pq2kkbILbb2MFQDEMh
-3/F8gnXSQdLZdQP/95K6l6TbDgYsUhTJ5+EjSSlF1NHgBDar+QokfHGNh+QS
-arv1eBh2psnUKmpnRe4yqyo6lntVRBld7uSJjkr2yhI9ikxF3Dl/moC2hRNC
-134C0TchXl1cvL24EsqjmsAHtOiVEUfn9zvvmror+BfZ2u7gA/vEHk8UkE/g
-1kb0FqOcc2EhQlQ2/6qMs9TMCYOo9QT+ji57CcH56LEItDpVvPhHCNXE0vmJ
-ACmAPm0DlRvDhvpPjhYUm3DTGMNm8ju/U1Z/T+C7BlfPXCkGK6UNQaTD7/Cb
-qmqD48xVQljnKwo7INWF+5vZ1eXl2wkRQrQMG/RJKUFtQ/QqI2CbUgegn7LQ
-JQNXQBOYk0r5fe6OlvqHWCJkxCS3wREU33MEiSNCV6IINWa60BkURh2c58gh
-yxY5aRMw54J7ryp2S19k47arSuc5CUK84NTe5U2WQIvEw8+uhfOYBl61HWWK
-80PhGptzu4+Pf97K+di6GKloqSpJJEgCIam+D+fzGH6dMmRGLFo8z4gCmiOJ
-y2ZIPINq5dfT0LbJ0CJ+I9xLFymsVBFEf4yBPmeoP39w5oCBstdGpaBRK+xR
-n5uVAEcdSxAjBjD6jemYOXtAy0B5UDnMsdBWJ5sniEC6BRZugNHiYb0ZvWz/
-YblK6/vrzw+399dzXq8/Tu/uhkUfsf64erijfdGtnk7OVovF9XLeHiYv/Mu1
-mH6hP+5qtPq0uV0tp3cdGh34/jYVdQ50CZnJLQ+NOKk9RpKBCpBjyLzeYpra
-+9knuHxFw+vUez7T+hcy3ly+fnU+i2OJtq3lrCHEySTaTqDqGpXnHMoYUkOt
-ozJ0JalCKFl8/FaMmcv3KksPgM2fxB8csb4dNtq5cvBDQJipgKGLDZj0RxOi
-KtpmpsmxPU2yorIUSRok2dPrZvEItXf0RjgzBr4dz4Iyl8QmiBMe+67RORpt
-0/FBwoz89dXvb5Ja51jRuOnWxiQuGG77k+qYXE4yZtG8gBvtQxxqCrHmPhka
-XX/XxFS4+CmGyjC5//cWKMbuaNPgAQ3RqXJyd5XW7dZTqURWn6PjiaQLRodI
-j5Ds6uqIFRld5s4i4fjOENNuGCQc446pY06RZkNFG6/jiW9HIPq86i8EPxf9
-bnpNpsvpf6O4xUGfJQnFujZSpRmHcf9YsjA4zTTbW3c0mO/4SBCPE9tUW2I+
-/2NUkNpwdO6KqyGSNPcDEew75f0GAAA=
+H4sIAKWCl1wAA21W72/bNhD9zr/i5nzZgMhIghRtDRSbGydtgDjOEgdDMQwD
+LdEWF4o0SMquF/h/3ztKsh2vQYCI1P16796dkmWZiDoaNaDpZDShjL652lO6
+EnI282q1ezNMRy2jdlYULreyglvh5Txm0RUu28A149usVF6JXEa1cH4zIG3n
+Tgi99AOKvg7x4uzs49mFkF7JAX1RVnlpxNr5l4V39bJN+AfO2i7oC9+JF7WB
+QTGgWxuVtypmI04sRIjSFn9L4yyK2agglnpAf0aXn1JwPno1D3jaVPzwlxCy
+jqXzA0GZIPxoG5CuT1PUny4aUHykm9oYPqZ75xfS6n8T+LbAycFVslGV1AYQ
+4fyb+i6rpVH93FVCWOcrmK0U8tLjzdXF+fnHAQgBLbsX+MmyjOQsRC9zAJuW
+OhB+paU2GLk51YE5qaR/Kdzaon6KpaIcTHIZbAH7jiNKHAFdqURYqlzPdU5z
+I1fOs+Uuykxx0DqoghO+eFnxdebneb+pqtJFAUGIEw7tXVHnCbRIPLy9Gjuv
+UsOrpqJccnyau9oWXO7r66+32ahvXYxIWsoqAwkZQGTI78N226efhwyZEYsG
+zwFRhD5CXDZX4JlkI7+OhqZMhhbVd+C+dxFmpYwkOjcGeshQ579yZqUCoi+N
+TEa9Rti9LjYrgdY6liR6DKD3C9Nx5exKWQbKjSpopOba6nTmDiqCbomFG6g3
+fn6a9k6bv3Q/Sc+P178/3z5ej/j56evw7m730Fk8fZ083+G9aJ/2nleT8fj6
+ftQ445aOrsbDb/jDVfUmD9Pbyf3wrkWjA89vXaFywhAykzNuGjhZehUhAxmo
+UCH3eqZS1z5fPdD5JZrXqne7xfNPOHw4f3+53Yp1qWyTy1kDxOkI2jYkl0sl
+PceQxkANSx2lwUgiQyhZfLwr+szlZ5mnBWCLvfiDA+uz3Yumr2z8HBRdyYCW
+vZ5AODk/bls/HJP01hoZtc1NXagmEiwpmUKPGAFsOqvWtPQO+8KZPvGkHBjl
+LglPgB+WwKLWhTLaJvednJmF9xfvPiTljlSF1mOCYxIa7SZ/r0AmmoP0IaC9
+QDl+V3epZJHcTXBd/WkPSJtjeTVSTF7tcO1Cp5Ikidy7EA5GxWAV+07JXetT
+D0BXgdXZQEEBtddxkwF4AFafRhgzSTyIrJudM7g6AttsJnk8oB0YHh1XR1oj
+QTOEAmuulqZFdUozvEUs6KGNxcV27gkzijRurTx3J4ktzWMhQ6kC03lyQjfa
+h7hroRBP3HZWDTYrp+eY8zc26BqH+tGaldwSh5dGrZTpauFMX6fTB1phX3G/
+LhKLPPmqW3H8/uITK+Pd5dkPlAGCZHXMV3AidVVHDthLMXhiQ0RirqrXBuz1
++TMN7SIfSC5c05s9tqiBGp/jBFLupdenG++qNHIY1GNBJA+W1D91y8++hsNC
+W6qfGm72XKfh60jc65aMDhEfuKwtTkdV4dBS254AwDeH06arR0LqOAWXQgzb
+TQDtQw8JA+dIi+Gp1TCv5gMNwylg4KNJTcJGMrqZiNfX3frYppUFanJXm4IH
+qxsI9CPUwAL7lfTa1YFhi+SWst4O74f/yzg9HBgqMW3WNZYyDTq7Nt9X3nAc
+Zpi/WLc2qliwSxCvA1tXM5RUfOrNsQ5UL+04aV8CkwJV+g1P77p0aKpZAlr6
+V0AlTqJzJjSLwihuaOrVuPvqI0BrLN7+w4C6/gMiBHtnGAoAAA==
 
 -->
 
