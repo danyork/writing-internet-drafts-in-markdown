@@ -1,6 +1,8 @@
 #
-# Makefile to build Internet Drafts from markdown using mmark and
-# relying on the docker image "paulej/rfctools".
+# Makefile to build Internet Drafts from markdown using mmark
+#
+# There is now a separate "Makefile-docker" file with info about how
+# to run mmark using the Docker image.
 #
 
 SRC  := $(wildcard draft-*.md)
