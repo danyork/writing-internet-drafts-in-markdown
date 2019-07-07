@@ -4,16 +4,17 @@
 
 TODO Working Group                                               T. Todo
 Internet-Draft                                         TODO Organization
-Intended status: Informational                             June 12, 2018
-Expires: December 14, 2018
+Expires: January 7, 2020                                    July 6, 2019
 
 
                            TODO - Your title
-                       draft-todo-your-name-here
 
 Abstract
 
-   TODO Abstract
+   This is an example of using markdown in the creation of an Internet
+   Draft.  The specific flavor of markdown being used is mmark version
+   2, created by Miek Gieben and available at
+   https://github.com/mmarkdown/mmark/ .
 
 Status of This Memo
 
@@ -30,11 +31,11 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on December 14, 2018.
+   This Internet-Draft will expire on January 7, 2020.
 
 Copyright Notice
 
-   Copyright (c) 2018 IETF Trust and the persons identified as the
+   Copyright (c) 2019 IETF Trust and the persons identified as the
    document authors.  All rights reserved.
 
    This document is subject to BCP 78 and the IETF Trust's Legal
@@ -52,44 +53,138 @@ Copyright Notice
 
 
 
-
-Todo                    Expires December 14, 2018               [Page 1]
+Todo                     Expires January 7, 2020                [Page 1]
 
-Internet-Draft             TODO - Abbreviation                 June 2018
+Internet-Draft             TODO - Abbreviation                 July 2019
 
 
 Table of Contents
 
    1.  Introduction  . . . . . . . . . . . . . . . . . . . . . . . .   2
    2.  Conventions and Definitions . . . . . . . . . . . . . . . . .   2
-   3.  Security Considerations . . . . . . . . . . . . . . . . . . .   2
-   4.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .   2
-   5.  Acknowledgments . . . . . . . . . . . . . . . . . . . . . . .   2
-   Author's Address  . . . . . . . . . . . . . . . . . . . . . . . .   2
+   3.  Background  . . . . . . . . . . . . . . . . . . . . . . . . .   2
+   4.  Use Cases . . . . . . . . . . . . . . . . . . . . . . . . . .   2
+     4.1.  First use case  . . . . . . . . . . . . . . . . . . . . .   3
+     4.2.  Second use case . . . . . . . . . . . . . . . . . . . . .   3
+     4.3.  Third use case  . . . . . . . . . . . . . . . . . . . . .   3
+   5.  Security Considerations . . . . . . . . . . . . . . . . . . .   3
+   6.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .   3
+   7.  References  . . . . . . . . . . . . . . . . . . . . . . . . .   3
+     7.1.  Normative References  . . . . . . . . . . . . . . . . . .   3
+     7.2.  Informative References  . . . . . . . . . . . . . . . . .   4
+   Author's Address  . . . . . . . . . . . . . . . . . . . . . . . .   4
 
 1.  Introduction
 
-   TODO Introduction
+   More information can be found in [I-D.nottingham-for-the-users].  (An
+   example of an informative reference in the middle of text.  Note that
+   referencing an Internet Draft involves replacing "draft-" in the name
+   with "I-D.".)
 
 2.  Conventions and Definitions
 
    The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT",
    "SHOULD", "SHOULD NOT", "RECOMMENDED", "NOT RECOMMENDED", "MAY", and
    "OPTIONAL" in this document are to be interpreted as described in BCP
-   14 {{RFC2119}} {{!RFC8174}} when, and only when, they appear in all
+   14 [RFC2119] [RFC8174] when, and only when, they appear in all
    capitals, as shown here.
 
-3.  Security Considerations
+   The reader may wish to note that one of the two RFC references in the
+   preceding paragraph was normative; the other was informative.  These
+   will be correctly identified as such in the References section below.
 
-   TODO Security
+3.  Background
 
-4.  IANA Considerations
+   This is some background text
+
+4.  Use Cases
+
+   This section will include some use cases for our new protocol.  The
+   use cases conform to the guidelines found in [RFC7268].
+   (Demonstrating a normative reference inline.)
+
+   Note that the section heading also includes an anchor name that can
+   be referenced in a cross reference later in the document, as is done
+   in Section 5 of this document.  (Demonstrating using a reference to a
+
+
+
+Todo                     Expires January 7, 2020                [Page 2]
+
+Internet-Draft             TODO - Abbreviation                 July 2019
+
+
+   heading without writing an actual anchor, but rather using the
+   heading name in lowercase and with dashes.)
+
+4.1.  First use case
+
+   Some text about the first use case.  (And an example of using a
+   second level heading.)
+
+4.2.  Second use case
+
+   This example includes a list:
+
+   o  first item
+
+   o  second item
+
+   o  third item
+
+   And text below the list.
+
+4.3.  Third use case
+
+   This use case includes some ascii art.  The format for this art is as
+   follows:
+
+           0
+          +-+
+          |A|
+          +-+
+
+5.  Security Considerations
+
+   As outlined earlier in Section 4, there could be security issues in
+   various use cases.
+
+6.  IANA Considerations
 
    This document has no IANA actions.
 
-5.  Acknowledgments
+7.  References
 
-   TODO acknowledge.
+7.1.  Normative References
+
+   [I-D.nottingham-for-the-users]
+              Nottingham, M., "The Internet is for End Users", draft-
+              nottingham-for-the-users-08 (work in progress), June 2019.
+
+
+
+
+
+Todo                     Expires January 7, 2020                [Page 3]
+
+Internet-Draft             TODO - Abbreviation                 July 2019
+
+
+   [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
+              Requirement Levels", BCP 14, RFC 2119,
+              DOI 10.17487/RFC2119, March 1997, <https://www.rfc-
+              editor.org/info/rfc2119>.
+
+   [RFC7268]  Aboba, B., Malinen, J., Congdon, P., Salowey, J., and M.
+              Jones, "RADIUS Attributes for IEEE 802 Networks",
+              RFC 7268, DOI 10.17487/RFC7268, July 2014,
+              <https://www.rfc-editor.org/info/rfc7268>.
+
+7.2.  Informative References
+
+   [RFC8174]  Leiba, B., "Ambiguity of Uppercase vs Lowercase in RFC
+              2119 Key Words", BCP 14, RFC 8174, DOI 10.17487/RFC8174,
+              May 2017, <https://www.rfc-editor.org/info/rfc8174>.
 
 Author's Address
 
@@ -109,4 +204,21 @@ Author's Address
 
 
 
-Todo                    Expires December 14, 2018               [Page 2]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Todo                     Expires January 7, 2020                [Page 4]

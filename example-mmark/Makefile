@@ -1,12 +1,10 @@
 #
-# Makefile to build Internet Drafts from markdown using mmarc and
+# Makefile to build Internet Drafts from markdown using mmark and
 # relying on the docker image "paulej/rfctools".
 #
 
 SRC  := $(wildcard draft-*.md)
 TXT  := $(patsubst %.md,%.txt,$(SRC))
-UID  := `id -u`
-GID  := `id -g`
 CWD  := `pwd`
 
 # Ensure the xml2rfc cache directory exists locally
@@ -17,5 +15,14 @@ all: $(TXT) $(HTML)
 clean:
 	rm -f draft*.txt draft-*.xml
 
-%.txt: %.md
-	docker run --rm --user=$(UID):$(GID) -v $(CWD):/rfc -v $(HOME)/.cache/xml2rfc:/var/cache/xml2rfc paulej/rfctools md2rfc $^
+%.txt: %.xml
+	xml2rfc --text -o $@ $<
+
+%.html: %.xml
+	xml2rfc --html -o $@ $<
+
+%.xml: %.md
+	mmark -2 < $< > $@
+
+clean:
+	rm -f draft-*.txt draft-*.html draft-*.xml
